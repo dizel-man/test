@@ -209,5 +209,7 @@ git reset HEAD <file> (на работе не сработал а git rm --cached <file> сработал)
 //
 1
 //
+2
+//
 
 
