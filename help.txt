@@ -207,9 +207,12 @@ git commit --amend -m "new commit" - так мы поменяли текст и файл последнего!!! 
 git reset HEAD <file> (на работе не сработал а git rm --cached <file> сработал)
 
 //
-1
+git diff - посмотреть что было изменено
 //
-2
-//
+
+взять файл из предыдущего комита
+git checkout abe3126221dc5e007eae6c1b3f99b50685e93403 -- help.txt (обрати внимание на пробелы)
+после этого help.txt попадет как modifed
+
 
 
