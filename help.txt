@@ -217,6 +217,7 @@ git checkout abe3126221dc5e007eae6c1b3f99b50685e93403 -- help.txt (обрати вниман
 а если передумали то возвращаемся
 git reset HEAD help.txt
 //
+del me
 
 
 
