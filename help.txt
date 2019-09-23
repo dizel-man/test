@@ -258,3 +258,10 @@ git merge --no-ff newbranch - будет создан новый комит
 123 git merge --abort -отменить слияние  
 
 
+ git mergetool --tool-help - будут показаны тулы для merge
+ 
+git stash save "test" - вставляем незакомиченные в копилку
+git stash list - просмотреть то что в копилке
+git stash apply stash@{0} - применяет {первое} все что было в копилке (сохраняя копию в памяти)
+git stash pop stash@{0} - применяет {первое} все что было в копилке (удаляя это из памяти)
+git stash drop stash@{0}  - удалить (первый стэш) 
