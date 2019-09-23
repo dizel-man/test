@@ -218,8 +218,21 @@ git checkout abe3126221dc5e007eae6c1b3f99b50685e93403 -- help.txt (обрати вниман
 git reset HEAD help.txt
 //
 
+assets/video игнорировать папку
+!assets/video/tour_*.mp4 - не игнорировать
+
+//
+ 
+ 
+ git log --oneline -короткий лог
+ 
+git log --oneline -2 - два последних комита
+git log --author="Vlad"  - по автору
+git log --oneline --graph --all --decorate - рекоментуют
+
+$ git diff 42b794f..82775895 - что изменилось (сравнить) КОМИТЫ
 
 
-
-
-
+ветки
+git branch - показать ветки
+ls -la .git/refs/heads - показать ветки в списке веток в .git
