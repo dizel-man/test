@@ -309,13 +309,23 @@ git branch newbranch origin/newbranch - мы как бы создаем ветк
 git checkout -b newbranch origin/newbranch (сразу переходим на неё)
 
 // fetch - merge - push
-для отправки на удаленный рекоментуется сначала  сделать fetch origin это для того чтобы
-если были изменения на удаленном, сначала их залить к себе потом  git merge origin/master 
-чтобы их слить, а уже потом git push
+для отправки на удаленный рекоментуется сначала (убедиться что у нас есть все иззменения с удаленного) сделать fetch origin то есть
+сначала изменеия залить к себе потом  git merge origin/master -чтобы их слить, а уже потом git push
+- для того чтобы  просмотреть изменения надо:
+git log -p newbranch..origin/newbranch 
+
 
 //
-
-
+удалить ветку на удаленном сервере
+вариант - 1.  git push origin :newbranch (тут как бы говориться что не надо ничего отправлять  ничего:newbranch).
+вариант - 2.  git push origin --delete newbranch (более популярный способ)
+//
+создать ветку опять: (без двоиточия) 
+git push origin newbranch
+//
+отправить ветку в уд.репозиорий и ослеживать её:
+git push -u origin newbranch
+//
 
 $ git remote rm origin - удалить удаленный репозиторий
 
