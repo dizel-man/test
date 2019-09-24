@@ -351,8 +351,9 @@ $ $ git config --global alias.co checkout
 	ci = commit
 	br = branch
 	df = diff
+	logg = log --graph --decorate --oneline --abbrev-commit --all
 	
-	
+
 
 
  
