@@ -293,9 +293,18 @@ git clone https://github.com/dizel-man/test.git newfolderName
 git remote add origin https://github.com/dizel-man/test
 git remote -v (проверяем)
 //
-fetch - забирает изменения из удаленного и хранит их в (origin) памяти до применеия (merge)
 git branch -r (покажет удаленный репозиторий)
-git branch -a (покажет локальный репозиторий)
+git branch -a (покажет все ветки на локальном и удаленном репозиторий)
+//
+fetch - забирает изменения из удаленного и хранит их в (origin) памяти до применеия (merge)
+
+git fetch - импортирует удаленный репазитори1 к нам локально, не не объединяет с нашим
+для объединения с нашим master надо:
+git merge origin/master
+
+для импорта ветки newbranch из удаленного:
+git branch newbranch origin/newbranch - мы как бы создаем ветку с тем же названием и наполняем из удаленного
+
 
 
 
