@@ -283,4 +283,8 @@ git remote add origin https://github.com/dizel-man/test .....
 $ git remote rm origin - удалить удаленный репозиторий
 git push -u origin master - отправить на уд.репозиторий
 
- 
+
+//
+$ git branch -a -показать локальные бранчи $ git branch -r - показать удаленные бранчи
+//
+
