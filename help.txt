@@ -296,13 +296,18 @@ git remote -v (проверяем)
 git branch -r (покажет удаленный репозиторий)
 git branch -a (покажет все ветки на локальном и удаленном репозиторий)
 //
+
 fetch - забирает изменения из удаленного и хранит их в (origin) памяти до применеия (merge)
 
-git fetch - импортирует удаленный репазитори1 к нам локально, не не объединяет с нашим
+git fetch - импортирует удаленный репазиторий (если он один, если нет то указываем: git fetch origin ) к нам локально, не не объединяет с нашим
+если вруг на удаленном появилась например новая ветка git покажет * [new branch] test -> origin/test
+если был комит отличающийся от нашего origin/master то покажет f83101d..eb4c97f  test   -> origin/test 
+//
+
 для объединения с нашим master надо:
 быть на ветке мастер
 git merge origin/master
-
+//
 для импорта ветки newbranch из удаленного:
 git branch newbranch origin/newbranch - мы как бы создаем ветку с тем же названием и наполняем из удаленного
 или
@@ -328,6 +333,26 @@ git push -u origin newbranch
 //
 
 $ git remote rm origin - удалить удаленный репозиторий
+
+//
+alias 
+сокращение
+gitconfig находится: $ git config --list --show-origin
+C:\Users\Vladislav_Kriukov и в корне
+
+$ git config --global alias.st "status" (для status)
+$ $ git config --global alias.co checkout
+и т.д.
+
+теперь в конфиге есть
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	br = branch
+	df = diff
+	
+	
 
 
  
