@@ -284,8 +284,20 @@ cat .git/config
 origin/master всегда пытается синхронизироваться с удаленным репозиторием
 //
 git push -u origin master (отправка ветки master на удаленный репозиторий)
+-u (обозначает что он будет отслеживаемый)
+//
+клонирование:
+git clone https://github.com/dizel-man/test.git newfolderName
+где newfolderName это папка куда будет скачан удаленный репазиторий
+после прописываем путь к удаленному репо:
+git remote add origin https://github.com/dizel-man/test
+git remote -v (проверяем)
 //
 fetch - забирает изменения из удаленного и хранит их в (origin) памяти до применеия (merge)
+git branch -r (покажет удаленный репозиторий)
+git branch -a (покажет локальный репозиторий)
+
+
 
 $ git remote rm origin - удалить удаленный репозиторий
 
