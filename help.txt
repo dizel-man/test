@@ -354,6 +354,10 @@ $ $ git config --global alias.co checkout
 	logg = log --graph --decorate --oneline --abbrev-commit --all
 	
 
+//
+если при merge появляется ошибка git refusing to merge unrelated histories
+то можно сделать git merge <branchName>  --allow-unrelated-histories
+//
 
 
  
