@@ -359,6 +359,8 @@ $ $ git config --global alias.co checkout
 то можно сделать git merge <branchName>  --allow-unrelated-histories
 //
 
+лучше мерджить так git merge --no-ff (https://habr.com/ru/post/106912/ ) легче будет вернуть всё назад
+
 
  
 
